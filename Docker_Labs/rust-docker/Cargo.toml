@@ -1,0 +1,8 @@
+@'
+[package]
+name = "rust-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+'@ | Out-File -FilePath Cargo.toml -Encoding utf8
