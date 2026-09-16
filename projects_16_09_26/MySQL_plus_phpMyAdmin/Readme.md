@@ -8,6 +8,9 @@
 ```shell
 docker compose ls
 ```
+
+![alt text](image.png)
+
 их лучше остановить, чтобы снизить риск возникновения конфликтов использования портов!
 
 Структура проекта
@@ -20,6 +23,8 @@ mysql-pma-app/
 ```shell
 mkdir -p mysql-pma-app && touch mysql-pma-app/compose.yaml && cd mysql-pma-app
 ```
+
+![alt text](image-1.png)
 
 ### 2. Файл настроек композера `compose.yml`
 ```yml
@@ -80,6 +85,9 @@ volumes:
 ```shell
 docker compose up -d
 ```
+
+![alt text](image-2.png)
+
 **Docker** начнёт скачивать необходимые образы и запускать контейнеры. Этот шаг может занять несколько минут.
 
 параметр `-d` означает фоновый режим запуска контейнеров
@@ -88,6 +96,9 @@ docker compose up -d
 ```shell
 docker compose ps -a
 ```
+
+![alt text](image-3.png)
+
 Оба контейнера (`mysql` и `phpmyadmin`) должны иметь статус **Up**.
 
 ### 4. Доступ к локальному сервису `phpMyAdmin`
@@ -97,8 +108,7 @@ docker compose ps -a
 - Пользователь: `root`
 - Пароль: `root`
 
-![Screen](/content/Docker/DockerCompose/img/13.png)
-![Screen](/content/Docker/DockerCompose/img/14.png)
+![alt text](image-4.png)
 
 ### 5. Управление и полезные команды
 
@@ -112,34 +122,54 @@ docker compose logs -f phpmyadmin
 
 Чтобы выйти из режима просмотра логов, необходимо выполнить `Ctrl+C` в терминале
 
+![alt text](image-5.png)
+
 2. Просмотр логов базы данных **mysql** в реальном времени
 ```shell
 docker compose logs -f mysql
 ```
 Чтобы выйти из режима просмотра логов, необходимо выполнить `Ctrl+C` в терминале
 
+![alt text](image-6.png)
+
 3. Приостановить запущенный контейнер:
 ```shell
 docker compose stop
 ```
+
+![alt text](image-7.png)
+
 4. Запустить приостановленный контейнер:
 ```shell
 docker compose start
 ```
+
+![alt text](image-8.png)
+
 5. Перезапустить
 ```shell
 docker compose restart
 ```
+
+![alt text](image-9.png)
+
 6. Показать конфигурацию текущего проекта:
 ```shell
 docker compose config
 ```
+
+![alt text](image-10.png)
+
 7. Вход в контейнер **MySQL** (имя контейнера можно узнать командой `docker compose ps`)
 ```shell
 docker compose exec mysql bash
 ```
-![Screen](/content/Docker/DockerCompose/img/15.png)
+
+![alt text](image-11.png)
+
 Выйти из контейнера можно командой `exit`
+
+![alt text](image-12.png)
 
 ### 6. Удаление этого проекта
 
@@ -149,14 +179,24 @@ docker compose exec mysql bash
 ```shell
 docker compose down
 ```
+
+![alt text](image-13.png)
+
 2. Остановка с полным удалением всех данных (базы данных и файлов) - опционально:
 ```shell
 docker compose down --volumes
 ```
+
+![alt text](image-14.png)
+
 или для краткости:
+
 ```shell
 docker compose down -v
 ```
+
+![alt text](image-15.png)
+
 (**Будьте осторожны:** эта команда удалит всё, что вы создали в проекте!).
 
 > ### Для полного удаления этого проекта, достаточно остановить его через `docker compose down` или `docker compose down --volumes`, удалить docker-образ, после чего удалить каталог проекта `mysql-pma-app`
@@ -174,5 +214,7 @@ cd ..
 ```shell
 rm -rf mysql-pma-app
 ```
+
+![alt text](image-16.png)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
