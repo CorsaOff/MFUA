@@ -1,4 +1,4 @@
-[LibreDB_Studio](/projects_16_09_26/StudioDB_Libre/Readme.md) - Пока что делается
+[LibreDB_Studio](/projects_16_09_26/StudioDB_Libre/Readme.md)
 
 [Homehub](/projects_16_09_26/Homehub/Readme.md)
 
