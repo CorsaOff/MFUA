@@ -1,4 +1,4 @@
-[PostgreSQL+pgAdmin](/projects_16_09_26/PostgreSQL+pgAdmin/Readme.md) - в работе
+[PostgreSQL+pgAdmin](/projects_16_09_26/PostgreSQL+pgAdmin/Readme.md)
 
 [drawDB](/projects_16_09_26/drawDB/Readme.md)
 
