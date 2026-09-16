@@ -1,3 +1,5 @@
+[wordpress](/projects_16_09_26/wordpress/Readme.md)
+
 [MySQL_plus_phpMyAdmin](/projects_16_09_26/MySQL_plus_phpMyAdmin/Readme.md)
 
 [PostgresSQL](/projects_16_09_26/PostgresSQL/Readme.md)
