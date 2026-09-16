@@ -1,3 +1,5 @@
+[MySQL_plus_phpMyAdmin](/projects_16_09_26/MySQL_plus_phpMyAdmin/Readme.md) - в работе
+
 [PostgresSQL](/projects_16_09_26/PostgresSQL/Readme.md)
 
 [PostgreSQL+pgAdmin](/projects_16_09_26/PostgreSQL+pgAdmin/Readme.md)
