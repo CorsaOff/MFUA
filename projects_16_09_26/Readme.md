@@ -1,4 +1,4 @@
-[drawDB](/projects_16_09_26/drawDB/Readme.md) - в работе
+[drawDB](/projects_16_09_26/drawDB/Readme.md)
 
 [LibreDB_Studio](/projects_16_09_26/StudioDB_Libre/Readme.md)
 
